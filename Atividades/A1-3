@@ -19,3 +19,21 @@ public class Filme {
         System.err.println("Marca: " + marca + ", Mémoria RAM: " + memoriaRam + " GB, Armazenamento: " + armazenamento + "GB.");
     }
 }
+
+
+/*
+3. Crie uma classe Filme com os seguintes atributos: titulo (String), duracaoEmMinutos(int) e genero (String)
+
+Crie os métodos:
+
+exibirInformacoes(): este método deve exibir o título, duração e gênero do filme.
+
+calcularDuracaoHoras(): este método deve calcular e exibir a duração do filme em horas (ex: "3 horas e 15 minutos"). 
+ */
+public class Main {
+    public static void main(String[] args) {
+        Filme filme = new Filme("Avatar", "Ficção", 195);
+        filme.exibirInformacoes();
+        filme.calcularHoras();
+    }
+}
